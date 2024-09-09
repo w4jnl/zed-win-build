@@ -1,4 +1,4 @@
-name: Build Zed Nightly
+name: Build Zed
 
 on:
   # Trigger when manually called in UI
