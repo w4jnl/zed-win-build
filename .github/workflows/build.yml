@@ -15,13 +15,16 @@ jobs:
           repository: zed-industries/zed
           ref: main
 
+      - name: Gith long path
+         run: git config --system core.longpaths true
+
       - name: Install rust nightly
         uses: actions-rs/toolchain@v1
         with:
           toolchain: nightly
           override: true
-          target: wasm32-wasi
-          #terget: wasm32-wasip1
+          #target: wasm32-wasi
+          target: wasm32-wasip1
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2.7.3
