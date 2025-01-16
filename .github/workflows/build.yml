@@ -20,8 +20,8 @@ jobs:
         with:
           toolchain: nightly
           override: true
-          #target: wasm32-wasi
-          terget: wasm32-wasip1
+          target: wasm32-wasi
+          #terget: wasm32-wasip1
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2.7.3
